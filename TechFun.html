@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href= 'https://fonts.googleapis.com/css?family=Luckiest Guy' rel='stylesheet' /> 
+    <link href= 'https://fonts.googleapis.com/css?family=Marck Script' rel='stylesheet' /> 
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <title>Tech Fun</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">NoobCoders</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Topics
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/Programming.html">Programming</a>
+                <a class="dropdown-item" href="CSETechFields.html"
+                  >CSE Tech Fields</a
+                >
+                <a class="dropdown-item" href="/TechTrends.html"
+                  >Tech Trends in CS</a
+                >
+                <a class="dropdown-item" href="TechFun.html">Tech Fun</a>
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+  
+          <!--login trigger-->
+          <button
+            class="btn btn-outline-primary mx-2"
+            data-toggle="modal"
+            data-target="#loginModal"
+          >
+            Login
+          </button>
+          <!--sign-up trigger-->
+          <button
+            class="btn btn-outline-danger mx-2"
+            data-toggle="modal"
+            data-target="#signupModal"
+          >
+            Sign-up
+          </button>
+        </div>
+      </nav>
+      <!--navbar closed-->
+
+<!-- Login  Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login Modal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <!--login form-->
+      <form>
+        <div class="form-group">
+          <label for="loginInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="loginInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="loginInputPassword1">Password</label>
+          <input type="password" class="form-control" id="loginInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="loginCheck1">
+          <label class="form-check-label" for="loginCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">login</button>
+      </form>
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+   <!-- Sign-up  Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Sign up Modal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <!--sign-up form-->
+      <form>
+
+        <div class="form-group">
+          <label for="signupInputPassword1">Enter full name</label>
+          <input type="text" class="form-control" id="signupInputPassword1" placeholder="your name">
+        </div>
+        <div class="form-group">
+          <label for="signupInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="loginInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="signupInputPassword1">Create Password</label>
+          <input type="password" class="form-control" id="signupInputPassword1" placeholder="Password">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">sign up</button>
+      </form>
+     
+      </div>
+    </div>
+  </div>
+</div>   
+     
+    
+    <div class="carousel">
+      <div class="crousel-inner"><div class="carousel-item bg-danger active text-white d-flex" style="font-family: Luckiest Guy;">
+      <h1 style="font-size:7vw;"> 10 Interesting Technology Facts</h1>
+      <img src="techfun1.jfif" class="rounded-circle img-fluid" alt="">
+      </div></div>
+    </div>
+     
+  <div class="container"><div  class="container bg-light d-flex justify-content-start align-items-center border border">
+    <img src="vibration.jfif" class="img-thumbnail my-2 mx-2">
+  <h3 style="font-family: Marck Script"> 1. Phantom Vibration Syndrome" is the name for when someone thinks their phone is vibrating, but it isn’t.</h3>
+  </div>
+<hr> 
+
+<div  class="container bg-dark text-white border" style="display:flex ; align-content: space-between">
+  <img src="HBqz569.png" class="img-thumbnail my-2 mx-2 order-2 img-fluid" style="height:200px;width:200px">
+<h3 style="font-family: Marck Script" class="d-flex justify-content-center align-items-center"> 2. HP, Microsoft and Apple have one very interesting thing in common – they were all started in a garage.</h3>
+</div>
+<hr> 
+
+
+
+
+  <div  class="container bg-light d-flex justify-content-start align-items-center border">
+    <img src="hacking.jfif" class="img-thumbnail my-2 mx-2">
+      <h3 style="font-family: Marck Script;">3. Nasa computers are hacked by a 15-year-old hacker and shut down the computer for 21 days. This hacker also hacked pentagon computer weapons.
+
+      </h3>
+  </div>
+<hr>
+
+<div  class="container bg-dark border text-white" style="display:flex ; align-content: space-between">
+  <img src="lenovo.jfif" class="img-thumbnail my-2 mx-2 order-2">
+<h3 style="font-family: Marck Script" class="d-flex justify-content-center align-items-center"> 4. Interesting fact for Leveno users. The meaning of Lenovo is “New Legend”. “Le” means Legend and “novo” means New.</h3>
+</div>
+<hr> 
+
+  <hr>
+
+  <div  class="container bg-light d-flex justify-content-start align-items-center border">
+    <img src="fox.jfif" class="img-thumbnail my-2 mx-2">
+      <h3 style="font-family: Marck Script;"> 5. The Firefox logo isn't a fox</h3>
+  </div>
+
+  <hr>
+
+  <div  class="container bg-dark border text-white" style="display:flex ; align-content: space-between">
+    <img src="phone.jfif" class="img-thumbnail my-2 mx-2 order-2">
+  <h3 style="font-family: Marck Script" class="d-flex justify-content-center align-items-center">6. Motorola produced the first handheld mobile phone
+    and their first phone call was to their rival.</h3>
+  </div>
+  <hr> 
+  
+  <hr>
+  <div  class="container bg-light d-flex justify-content-start align-items-center border">
+    <img src="despacito.png" class="img-thumbnail my-2 mx-2 img-fluid" style="height: 200px;width: 200px;">
+      <h3 style="font-family: Marck Script;">7. “Despacito” by Luis Fonsi featuring Daddy Yankee is the most-viewed video on YouTube, with over 6.9 billion views as of September 2020.</h3>
+  </div>
+  <hr>
+ 
+  <div  class="container bg-dark border text-white" style="display:flex ; align-content: space-between">
+    <img src="qwerty.jfif" class="img-thumbnail my-2 mx-2 order-2">
+  <h3 style="font-family: Marck Script" class="d-flex justify-content-center align-items-center">8. ‘Typewriter’ is the longest word you can type on a QWERTY keyboard, using only one of the rows on your keyboard.</h3>
+  </div>
+  <hr> 
+  
+  <hr>
+
+  <div  class="container bg-light d-flex justify-content-start align-items-center border">
+     <img src="fb.jpg" class="img-thumbnail my-2 mx-2 img-fluid" style="height: 200px;width: 200px;">
+  <h3 style="font-family: Marck Script" > 10. Facebook will pay $500 if you find a bug in their codeh3</h3>
+  </div>
+  <hr>
+
+  <div  class="container bg-dark border text-white" style="display:flex ; align-content: space-between">
+   
+  <img src="google.jfif" class="img-thumbnail my-2 mx-2n order-2">
+      <h3 style="font-family: Marck Script;" class="d-flex justify-content-center align-items-center">9. The name Google was created accidentally, it was originally supposed to be named ‘Googol’. (Googol is the digit 1 followed by 100 zeroes).
+
+      </h3></div>
+  <hr> 
+  
+  <footer class="container my-4">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>© 2023-2024 NoobCoders, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+</div>
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

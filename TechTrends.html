@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>Tech Trends</title>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">NoobCoders</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Topics
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/Programming.html">Programming</a>
+              <a class="dropdown-item" href="CSETechFields.html"
+                >CSE Tech Fields</a
+              >
+              <a class="dropdown-item" href="/TechTrends.html"
+                >Tech Trends in CS</a
+              >
+              <a class="dropdown-item" href="TechFun.html">Tech Fun</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Write us</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+
+        <!--login trigger-->
+        <button
+          class="btn btn-outline-primary mx-2"
+          data-toggle="modal"
+          data-target="#loginModal"
+        >
+          Login
+        </button>
+        <!--sign-up trigger-->
+        <button
+          class="btn btn-outline-danger mx-2"
+          data-toggle="modal"
+          data-target="#signupModal"
+        >
+          Sign-up
+        </button>
+      </div>
+    </nav>
+    <!--navbar closed-->
+<!-- Login  Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login Modal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <!--login form-->
+      <form>
+        <div class="form-group">
+          <label for="loginInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="loginInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="loginInputPassword1">Password</label>
+          <input type="password" class="form-control" id="loginInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="loginCheck1">
+          <label class="form-check-label" for="loginCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">login</button>
+      </form>
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Sign-up  Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Sign up Modal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <!--sign-up form-->
+      <form>
+
+        <div class="form-group">
+          <label for="signupInputPassword1">Enter full name</label>
+          <input type="text" class="form-control" id="signupInputPassword1" placeholder="your name">
+        </div>
+        <div class="form-group">
+          <label for="signupInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="loginInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="signupInputPassword1">Create Password</label>
+          <input type="password" class="form-control" id="signupInputPassword1" placeholder="Password">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">sign up</button>
+      </form>
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!--section-->
+    <section class="jumbotron text-center" style="background-color:darkseagreen;">
+      <div class="container">
+        <h1 class="jumbotron-heading font-weight-bold" style="text-decoration: underline; color:darkblue">Tech Trends</h1>
+        <p class="lead text">
+          “Technology like art is a soaring exercise of the human imagination.”
+          – Daniel Bell<br />
+          “Let’s go invent tomorrow instead of worrying about what happened
+          yesterday.” – Steve Jobs
+        </p>
+      </div>
+    </section>
+    <!--section closed-->
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      <div
+        class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 w-50 text-center text-white overflow-hidden"
+      >
+        <div class="my-3 py-3">
+          <h2 class="display-5">Chat GPT</h2>
+          <p class="lead">
+            Lensa uses artificial intelligence to digitize portraits in a
+            variety of categories, from anime to fantasy to what they call
+            "stylish" — which most closely resembles an oil painting set to a
+            bold colored or blank background. The app itself is free, but the
+            portraits come at a cost.
+          </p>
+          <a href="https://openai.com/blog/chatgpt/">view more</a>
+        </div>
+        <div
+          class="bg-light box-shadow mx-auto"
+          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
+        >
+          <img
+            class="img-fluid rounded w-100 img-thumbnail"
+            style="height: 100%"
+            src="blob (2).jfif"
+          />
+        </div>
+      </div>
+
+      <div
+        class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 w-50 text-center text-white overflow-hidden"
+      >
+        <div class="my-3 py-3">
+          <h2 class="display-5">Lensa AI</h2>
+          <p class="lead">
+            Lensa uses artificial intelligence to digitize portraits in a
+            variety of categories, from anime to fantasy to what they call
+            "stylish" — which most closely resembles an oil painting set to a
+            bold colored or blank background. The app itself is free, but the
+            portraits come at a cost.
+          </p>
+          <a href="https://prisma-ai.com/lensa">view more</a>
+        </div>
+        <div
+          class="bg-light box-shadow mx-auto"
+          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
+        >
+          <img
+            class="img-fluid rounded w-100"
+            style="height: 100%"
+            src="lensa.webp"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      <div
+        class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 w-50 text-center text-white overflow-hidden"
+      >
+        <div class="my-3 py-3">
+          <h2 class="display-5">Digital Marketing</h2>
+          <p class="lead">
+            Digital marketing, also called online marketing, is the promotion of
+            brands to connect with potential customers using the internet and
+            other forms of digital communication. This includes not only email,
+            social media, and web-based advertising, but also text and
+            multimedia messages as a marketing channel.
+          </p>
+          <a href="https://www.investopedia.com/terms/d/digital-marketing.asp"
+            >view more</a
+          >
+        </div>
+        <div
+          class="bg-light box-shadow mx-auto"
+          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
+        >
+          <img
+            class="img-fluid rounded w-100 img-thumbnail"
+            style="height: 100%"
+            src="blob (3).jfif"
+          />
+        </div>
+      </div>
+      
+      
+      <div
+        class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 w-50 text-center text-white overflow-hidden"
+      >
+        <div class="my-3 py-3">
+          <h2 class="display-5">Mixed Reality</h2>
+          <p class="lead">Mixed Reality Portal is a Universal Windows Platform app that serves as a front-end for Windows Mixed Reality. It features a 3D environment which users can explore, and customize with application shortcuts and virtual desktops. The feature originally launched with one environment, the Cliff House.</p>
+          <a href="https://apps.microsoft.com/store/detail/mixed-reality-portal/9NG1H8B3ZC7M?hl=en-in&gl=in&rtc=1">view more</a>
+        </div>
+        <div
+          class="bg-light box-shadow mx-auto"
+          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
+        >
+          <img
+            class="img-fluid rounded w-100 img-thumbnail"
+            style="height: 100%"
+            src="mixed-reality.jpg"
+          />
+        </div>
+      </div>
+    </div>
+
+    
+<footer class="container my-4">
+  <p class="float-right"><a href="#">Back to top</a></p>
+  <p>© 2017-2018 NoobCoders, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+</footer>
+
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

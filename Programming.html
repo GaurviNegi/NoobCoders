@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Programming</title>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">NoobCoders</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Topics
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/Programming.html">Programming</a>
+                <a class="dropdown-item" href="CSETechFields.html">CSE Tech Fields</a>
+                <a class="dropdown-item" href="/TechTrends.html">Tech Trends in CS</a>
+                <a class="dropdown-item" href="TechFun.html">Tech Fun</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Write us</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+  
+        <!--login trigger-->
+          <button class="btn btn-outline-primary mx-2" data-toggle="modal" data-target="#loginModal">Login</button>
+        <!--sign-up trigger--> 
+          <button class="btn btn-outline-danger mx-2" data-toggle="modal" data-target="#signupModal">Sign-up</button>
+  
+        </div>
+      </nav>
+
+
+ <!-- Login  Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login Modal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <!--login form-->
+      <form>
+        <div class="form-group">
+          <label for="loginInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="loginInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="loginInputPassword1">Password</label>
+          <input type="password" class="form-control" id="loginInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="loginCheck1">
+          <label class="form-check-label" for="loginCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">login</button>
+      </form>
+     
+      </div>
+    </div>
+  </div>
+</div>     
+ 
+      <!-- Sign-up  Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Sign up Modal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <!--sign-up form-->
+      <form>
+
+        <div class="form-group">
+          <label for="signupInputPassword1">Enter full name</label>
+          <input type="text" class="form-control" id="signupInputPassword1" placeholder="your name">
+        </div>
+        <div class="form-group">
+          <label for="signupInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="loginInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="signupInputPassword1">Create Password</label>
+          <input type="password" class="form-control" id="signupInputPassword1" placeholder="Password">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">sign up</button>
+      </form>
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+      <div class="container-fluid d-flex">
+        <div class="list-group">
+        
+        <img src="java-script.png" alt="javascript" class="img-fluid list-group-item rounded-circle my-2" height="120" width="120">
+        <img src="c-.png" alt="c++" class="img-fluid list-group-item rounded-circle my-2" height="120" width="120">
+        <img src="java.png" alt="java" class="img-fluid list-group-item rounded-circle my-2"  height="120" width="120">
+        <img src="python (2).png" alt="python" class="img-fluid list-group-item rounded-circle my-2"  height="120" width="120">
+        <img src="php-programming-language.png" alt="php" class="img-fluid list-group-item rounded-circle my-2" height="120" width="120">
+        <img src="go-programming-language-icon.png" alt="Go" class="img-fluid list-group-item rounded-circle my-2" height="120" width="120">
+        
+      </div>
+    <div class="container mx-2">
+        <p><h4 class="d-inline-block"><strong class="text-primary font-italic">Programming</h4></strong>  is an intriguing sector as it gives us the superpower to regulate computer programs on the go. It can be used for ships, traffic control, robotics, self-driving vehicles, smartphone applications, websites, and many other things.
+        </p>
+        <p>Coding and programming skills are some of the most in-demand abilities in the modern job market. As many more services transition to digital and online technologies, there is a need for people who can write and understand many different types of code. We take a look at some of the different programming languages and what they’re used for. </p>
+
+        <div class="container.fluid"><h3 class="bg-dark bg-gradient bg-opacity-10 text-white pt-md-2 pb-md-2" >Different Programming languages</h3></div>
+
+        <div class="container my-4"><h4 class="bg-light pt-md-2 pb-md-2" >1. JavaScript</h4>
+            JavaScript is a high-level programming language that is one of the core technologies of the World Wide Web. It is used as a client-side programming language by 97.8 percent of all websites. JavaScript was originally used only to develop web browsers, but they are now used for server-side website deployments and non-web browser applications as well. <br>
+
+            Javascript was created in 1995 and was initially known as LiveScript. However, Java was a very popular language at that time, so it was advertised as a “younger brother” of Java. As it evolved over time, JavaScript became a fully independent language. Nowadays, JavaScript is often confused with Java, and although there are some similarities between them, the two languages are distinct.
+            <h6 class="pb-md-2 pt-md-2"><a href="https://www.tutorialspoint.com/javascript/index.htm" class="bg-light">learn from here</a></h6>
+        </div>
+        <hr class="featurette-divisor">
+
+
+        <div class="container my-4"><h4 class="bg-light pt-md-2 pb-md-2" >2. C++ and C</h4>
+            C is probably the oldest and popular programming language and is the root of other programming languages such as C#, Java, and JavaScript. C++ is an enhanced version of C. Many developers today skip learning C on its own, while others think learning C first provides a valuable foundation for C++ development. Both languages are widely used in computer science and programming.<br> 
+
+C and C++ developers can make use of compilers for a wide variety of platforms, making applications developed in these languages largely transportable. Both C and C++ are considered high-performance languages. As such, they are widely used in developing applications where performance is a critical issue, such as client/server applications, commercial products like Firefox and Adobe, and video games. C and C++ developers earn an average of $118,366 each year.
+            <h6 class="pb-md-2 pt-md-2"><a href="https://www.geeksforgeeks.org/cpp-tutorial/" class="bg-light">learn from here</a></h6>
+        </div>
+        <hr class="featurette-divisor">
+
+
+<div class="container my-4"><h4 class="bg-light pt-md-2 pb-md-2" >3. Java</h4>
+            
+<a href="https://www.oracle.com/in/java/">Java</a> is one of the most popular programming languages used today. <br>
+
+Owned by Oracle Corporation, this general-purpose programming language with its object-oriented structure has become a standard for applications that can be used regardless of platform (e.g., Mac, Windows, Android, iOS, etc.) because of its Write Once, Run Anywhere (WORA) capabilities. As a result, Java is recognized for its portability across platforms, from mainframe data centers to smartphones. Today there are more than 3 billion devices running applications built with Java.<br>
+
+Java is widely used in web and application development as well as big data. Java is also used on the backend of several popular websites, including Google, Amazon, Twitter, and YouTube. It is also extensively used in hundreds of applications. New Java frameworks like Spring, Struts, and Hibernate are also very popular. With millions of Java developers worldwide, there are hundreds of ways to learn Java. Also, Java programmers have an extensive online community and support each other to solve problems.<br>
+
+Java is a more complex language to learn, but experienced developers with Java coding skills are in high demand. The average Java developer earns around $109,225 each year.
+
+
+            <h6 class="pb-md-2 pt-md-2"><a href="https://www.javatpoint.com/java-tutorial" class="bg-light">learn from here</a></h6>
+        </div>
+        <hr class="featurette-divisor">
+
+
+        <div class="container my-4"><h4 class="bg-light pt-md-2 pb-md-2" >4. Python</h4>
+            Python is one of the most popular programming languages today and is easy for beginners to learn because of its readability. It is a free, open-source programming language with extensive support modules and community development, easy integration with web services, user-friendly data structures, and GUI-based desktop applications. It is a popular programming language for machine learning and deep learning applications. <br>
+
+Python is used to develop 2D imaging and 3D animation packages like Blender, Inkscape, and Autodesk. It has also been used to create popular video games, including Civilization IV, Vegas Trike, and Toontown. Python is used for scientific and computational applications like FreeCAD and Abacus and by popular websites like YouTube, Quora, Pinterest, and Instagram. Python developers earn average annual salaries of about $109,092.
+            <h6 class="pb-md-2 pt-md-2"><a href="https://www.w3schools.com/python/" class="bg-light">learn from here</a></h6>
+        </div>
+        <hr class="featurette-divisor">
+
+
+        <div class="container my-4"><h4 class="bg-light pt-md-2 pb-md-2" >5. PHP</h4>
+            PHP is an open-source programming language created in 1990. Many web developers find it essential to learn PHP, as this language is used to build more than 80% of websites on the Internet, including notable sites like Facebook and Yahoo.
+<br>
+Programmers mainly use PHP mainly to write server-side scripts. But developers can also use this language to write command-line scripts, and programmers with high-level PHP coding skills can also use it to develop desktop applications. <br>
+
+PHP is considered a relatively easy language to learn for beginning developers. PHP professionals have access to several dedicated online communities, making it easy to get support and answers to questions.<br>
+
+On average, PHP programmers earn average annual salaries of about $107,409.
+            <h6 class="pb-md-2 pt-md-2"><a href="https://www.php.net/docs.php" class="bg-light">learn from here</a></h6>
+        </div>
+        <hr class="featurette-divisor">
+
+
+
+        <div class="container my-4 "><h4 class="bg-light pt-md-2 pb-md-2" >6. Go</h4>
+            
+            Go was developed by Google in 2007 for APIs and web applications. Go has recently become one of the fastest-growing programming languages due to its simplicity, as well as its ability to handle multicore and networked systems and massive codebases.
+            <br><br>
+            Go, also known as Golang, was created to meet the needs of programmers working on large projects. It has gained popularity among many large IT companies thanks to its simple and modern structure and syntax familiarity. Companies using Go as their programming language include Google, Uber, Twitch, Dropbox, among many others. Go is also gaining in popularity among data scientists because of its agility and performance.
+            <br>
+            Go developers can earn an average annual salary of $141,654, and hitting up to $261,000. nterest, and Instagram. Python developers earn average annual salaries of about $109,092.
+            <h6 class="pb-md-2 pt-md-2"><a href="https://go.dev/doc/tutorial/getting-started" class="bg-light">learn from here</a></h6>
+        </div>
+        <hr class="featurette-divisor">
+
+        <footer class="container my-4">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p>© 2017-2018 NoobCoders, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+          </footer>
+          
+        
+    </div>
+    <div class="list-group d-flex justify-content-end">
+        
+        <img src="java-script.png" alt="javascript" class="img-fluid list-group-item rounded-circle my-2" height="120" width="120">
+        <img src="c-.png" alt="c++" class="img-fluid list-group-item rounded-circle my-2" height="120" width="120">
+        <img src="java.png" alt="java" class="img-fluid list-group-item rounded-circle my-2"  height="120" width="120">
+        <img src="python (2).png" alt="python" class="img-fluid list-group-item rounded-circle my-2"  height="120" width="120">
+        <img src="php-programming-language.png" alt="php" class="img-fluid list-group-item rounded-circle my-2" height="120" width="120">
+        <img src="go-programming-language-icon.png" alt="Go" class="img-fluid list-group-item rounded-circle my-2" height="120" width="120">
+        </div>
+      
+        
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
